@@ -24,7 +24,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/textViewBienvenido"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -37,20 +37,19 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/textViewNombreE"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Ingrese equipo:" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                    android:id="@+id/editTextNombreEquipo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="NombreEquipo" />
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
             <LinearLayout
@@ -59,7 +58,7 @@
                 android:orientation="horizontal">
 
                 <Spinner
-                    android:id="@+id/spinner"
+                    android:id="@+id/spinnerDeporte"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="1" />
