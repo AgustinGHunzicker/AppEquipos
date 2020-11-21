@@ -18,6 +18,9 @@ public class Equipo {
     @ColumnInfo(name="deporte")
     private String deporte;
 
+    public Equipo() {
+    }
+
     public long getIdEquipo() {
         return idEquipo;
     }

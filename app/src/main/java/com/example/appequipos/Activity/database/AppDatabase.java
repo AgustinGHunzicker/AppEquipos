@@ -14,13 +14,13 @@ import java.util.concurrent.Executors;
 public abstract class AppDatabase extends RoomDatabase {
     private static volatile com.example.appequipos.Activity.database.AppDatabase _INSTANCE;
 
-    public abstract DAOEquipo daoPlato();
+    public abstract DAOEquipo daoEquipo();
 
 
     private static final int NUMBER_OF_THREADS = 1;
     static final ExecutorService databaseWriteExecutor = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
 
-    static com.example.appequipos.Activity.database.AppDatabase getInstance(final Context context) {
+    static public AppDatabase getInstance(final Context context) {
         if (_INSTANCE == null) {
             synchronized (com.example.appequipos.Activity.database.AppDatabase.class) {
                 if (_INSTANCE == null) {
